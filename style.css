@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #eee;
+}
+section{
+    padding: 2rem 9%;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1));
+    padding: 2rem 9%;
+   border-bottom: 1px solid grey;
+    z-index: 1000;
+
+}
+.nav-active{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    width: 100%;
+    background: black;
+    padding: 2rem 9%;
+   border-bottom: 1px solid black;
+    z-index: 1000;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.header .logo i{
+    color: #0c3227;
+}
+.header .navigation a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: white;
+ }
+ .header .navigation a:hover{
+    color: #0c3227;
+    text-decoration: underline;
+ }
+
+ .header .icons{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: white;
+ }
+ .btn{
+    height: 4rem;
+    font-size: 1.3rem;
+    background: #0c3227;
+    color: white;
+    width: 15rem;
+    cursor: pointer;
+    margin: 0 5rem;
+ }
+ 
+ .home{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: url("https://cdn.pixabay.com/photo/2017/03/03/23/20/waterfall-2115206_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    height: 80vh;
+ }
+
+ .home h3{
+    color: white;
+    font-size: 3rem;
+    margin-top: -15rem;
+ }
+ .home h1{
+    color: gray;
+    font-size: 5rem;
+    width: 60rem;
+    margin-top: 1.5rem;
+ }
+.home p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    width: 65rem;
+    margin-bottom: 1.5rem;
+}
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.about .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: .1rem solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1.5  rgba(0, 0, 0, 0.1);
+}
+.about .box-container .box .special{
+    display: none;
+}
+.about .box-container .box img{
+    margin: 1rem 0;
+    width: 20rem;
+    height: 25rem;
+}
+.about .box-container .box p{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.vote {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 5rem;
+}
