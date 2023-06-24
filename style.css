@@ -119,6 +119,7 @@ section{
 }
 
 .about .box-container .box{
+    display: none;
     padding: 3rem 2rem;
     background: #fff;
     outline: .1rem solid rgba(0, 0, 0, 0.1);
@@ -139,10 +140,10 @@ section{
     font-size: 1.3rem;
     color: #666;
 }
-
-.vote {
+ 
+.small{
     display: flex;
     align-items: center;
-    padding: 0 1rem;
-    margin-top: 5rem;
+    margin-left: -10rem;
+    margin-bottom: 5rem;
 }
