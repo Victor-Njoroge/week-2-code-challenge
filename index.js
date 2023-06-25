@@ -6,6 +6,12 @@ window.onscroll=()=>{
         navbar.classList.remove('nav-active')
     }
 }
+/*The above code performs an event action on the principal of scrolling it turn 
+the background of the navbar from transparent to black
+*/
+
+
+
 
 
 const renderOneAnimal =(animal) =>{
@@ -16,14 +22,14 @@ const renderOneAnimal =(animal) =>{
     ` 
     document.querySelector(".small").appendChild(buttons)
     buttons.querySelector(".display").addEventListener("click", (e)=>{
-        card.style.display="block"
+        if( card.style.display=="none"){
+            card.style.display="block"
+        }else{
+            card.style.display="none"
+        }
         e.preventDefault(card)
     })
-
-
-
-
-
+    /** */
     const card=document.createElement("div");
     card.className="box";
     card.innerHTML=`
@@ -36,7 +42,6 @@ const renderOneAnimal =(animal) =>{
 
     `
     console.log(card)
-
     document.querySelector(".box-container").appendChild(card)
 
 
@@ -54,7 +59,9 @@ const renderOneAnimal =(animal) =>{
         })
        
     })
-
+/**The above code allows one to vote and the changes are done to the db.json 
+ * once you click the vote button it adds the vote by one
+ */
     card.querySelector(".reset") .addEventListener("click",()=>{
         animal.votes*=0;
         card.querySelector(".votes").textContent=animal.votes
@@ -67,7 +74,9 @@ const renderOneAnimal =(animal) =>{
         })
         
     })
-
+/**The above code allows one to reset the votes and the changes are done to the db.json 
+ * once you click the vote button it resets the votes back to zero
+ */
 }
 
 const getData=()=>{

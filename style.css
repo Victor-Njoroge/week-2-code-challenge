@@ -118,7 +118,7 @@ section{
 }
 
 .animals .box-container .box{
-    display: none;
+     display: none;
     padding: 3rem 2rem;
     background: #fff;
     outline: .1rem solid rgba(0, 0, 0, 0.1);
