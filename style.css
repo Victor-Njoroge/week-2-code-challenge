@@ -80,9 +80,9 @@ section{
     cursor: pointer;
     margin: 0 5rem;
  }
- 
+
  .home{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: left;
     background: url("https://cdn.pixabay.com/photo/2017/03/03/23/20/waterfall-2115206_1280.jpg");
@@ -92,11 +92,10 @@ section{
     padding-bottom: 10rem;
     height: 80vh;
  }
-
  .home h3{
     color: white;
     font-size: 3rem;
-    margin-top: -15rem;
+    margin-top: 8rem;
  }
  .home h1{
     color: gray;
@@ -112,38 +111,49 @@ section{
     margin-bottom: 1.5rem;
 }
 
-.about .box-container{
+.animals .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.about .box-container .box{
+.animals .box-container .box{
     display: none;
     padding: 3rem 2rem;
     background: #fff;
     outline: .1rem solid rgba(0, 0, 0, 0.1);
     outline-offset: -1rem;
     text-align: center;
-    box-shadow: 0 .5rem 1.5  rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1.5  rgba(0, 0, 0, 0.1)
 }
-.about .box-container .box .special{
-    display: none;
-}
-.about .box-container .box img{
+
+
+.animals .box-container .box img{
     margin: 1rem 0;
     width: 20rem;
     height: 25rem;
 }
-.about .box-container .box p{
+
+
+.animals .box-container .box img{
+    margin: 1rem 0;
+    width: 20rem;
+    height: 25rem;
+}
+.animals .box-container .box p{
     margin: 1rem 0;
     font-size: 1.3rem;
     color: #666;
+}
+.reset{
+    margin-top: .5rem;
 }
  
 .small{
     display: flex;
     align-items: center;
-    margin-left: -10rem;
+    margin-left: -5rem;
     margin-bottom: 5rem;
 }
+
+
